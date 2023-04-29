@@ -1,0 +1,183 @@
+.borda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35vw;
+    padding: 18px;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color:rgba(0, 0, 0, 0.814);
+}
+.col-md-8 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    height: 70vh;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color:rgba(0, 0, 0, 0.414);
+    box-shadow: 8px 10px 10px black; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.paginate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+th {
+    color: white;
+    letter-spacing: 3px;
+}
+
+.list {
+    width: 90vw;
+    text-align: center;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0 0;
+    width: 90vw;    
+    margin: auto auto; 
+}
+
+#thead {
+    font-size: 25px;
+    margin-top: -50px;
+}
+
+#chave {
+    color: white;
+    width: 20% !important;
+}
+
+#palavra {
+    text-align: right;
+}
+
+textarea {
+    width: 90% !important;
+}
+
+#nome{
+    width: 20% !important;
+    color: white;
+    text-align: left;
+}
+
+#jurisprudencia {
+    text-align: left;
+}
+
+#input-group {
+    margin: auto auto;
+    height: 40px;
+}
+
+.input-group-text {
+    margin: auto auto;
+    height: 40px;
+    margin-top: -9px;
+}
+
+.container-imagem {
+    background: url('img/direito2.avif'); 
+    background-size: 100% 100%;
+    background-repeat: no-repeat !important;
+    background-position: center center; 
+    width: 100vw;
+    height: 100vh;
+}
+
+.legal-test {
+    background: url('img/legal-page.svg');
+    background-repeat: no-repeat !important;
+    background-position: left center; 
+    background-size: 50% 70%;
+    width: 8vw;
+    height: 10vh;
+}
+
+.imagem {
+    text-align: left;
+    object-fit: contain;
+    width: 15%;
+}
+
+.form-control {
+    text-align: center;
+    height: 40px;
+    margin-top: -9px;
+}
+
+#icone {
+    text-align: center;
+    background-color: #e9ecef;
+    border: none;
+}
+
+#icon {
+    border: none;
+    height: 20px;
+    background-color: #e9ecef;
+}
+
+#icones {
+    font-size: 50px;
+    color: white;
+    margin-right: 20%;
+}
+
+#paginate {
+    width: 100%;
+    margin: 32px auto; 
+}
+
+#paginate .item {
+    padding: 16px 32px;
+}
+
+#paginate .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+#paginate .pagination div {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+}
+
+#paginate .pagination div:not(.numbers),
+#paginate .pagination div.numbers div {
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    color: white;
+}
+
+#paginate .pagination div:not(.numbers):hover,
+#paginate .pagination div.numbers div:hover,    
+#paginate .pagination div.numbers div.active {
+    color: blue; 
+}

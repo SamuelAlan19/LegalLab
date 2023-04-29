@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+</head>
+
+<body>
+    <div class="container-imagem">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <form action="TelaConsulta.html" method="POST">
+                        <div class="borda">
+                            <div class="imagem">
+                                <div class="legal-test"></div>
+                            </div>
+                            <div class="input-group mb-3" id="input-group">
+                                <input type="text" class="form-control" placeholder="Faça sua Busca" required>
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><button type="submit" id="icon"><i id="icone"
+                                                class="fa fa-search" onclick="redirecionar()"></i></button></span>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="box">
+                <section id="paginate">
+                    <div class="list"></div>
+                    <div class="pagination">
+                        <div class="first">&#171;</div>
+                        <div class="prev">&lt;</div>
+                        <div class="numbers">
+                            <div>1</div>
+                        </div>
+                        <div class="next">&gt;</div>
+                        <div class="last">&#187;</div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>

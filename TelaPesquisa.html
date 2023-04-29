@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Pesquisa</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="container-imagem">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 id="titulo">Wise Law</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="borda">
+                        <form action="teste2.html" method="POST" onkeypress="enviaform()">
+                            <div class="sub-titulo">
+                                <h2>Legal Lab</h2>
+                            </div>
+                            <div class="imagem">
+                                <div class="image"></div>
+                            </div>
+                            <div class="input-group mb-3" id="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Pesquisa</span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Faça sua Busca" required>
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><button type="submit" id="icon"><i id="icone"
+                                                class="fa fa-search" onclick="redirecionar()"></i></button></span>
+                                </div>
+                            </div>
+                            <input type="submit" id="button" class="btn btn-primary" onclick="redirecionar()"
+                                value="Buscar">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>

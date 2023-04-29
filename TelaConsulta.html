@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Consulta</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container-imagem">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <form action="TelaConsulta.html" method="POST">
+                        <div class="borda">
+                            <div class="imagem">
+                                <div class="legal-test"></div>
+                            </div>
+                            <div class="input-group mb-3" id="input-group">
+                                <input type="text" class="form-control" placeholder="Faça sua Busca" required>
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><button type="submit" id="icon"><i id="icone"
+                                                class="fa fa-search" onclick="redirecionar()"></i></button></span>
+                                </div>
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="box">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Jurisprudência</th>
+                                <th>Descrição do Conteúdo</th>
+                                <th>Palavras-Chave</th>
+                                <th>Download</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Jurisprudência 1</td>
+                                <td><textarea name="" id="area1" cols="90" rows="3" style="resize: none"
+                                        disabled>HABEAS CORPUS. AUTORIZAÇÃO PARA INTERRUPÇÃO DE GRAVIDEZ. ABORTO NECESSÁRIO. NÃO COMPROVAÇÃO DE RISCO DE MORTE À GESTANTE. ABORTO HUMANITÁRIO. ATO INFRACIONAL ANÁLOGO A ESTUPRO DE VULNERÁVEL. OCORRÊNCIA. VÍTIMA MENOR DE QUATORZE ANOS. VIOLÊNCIA PRESUMIDA. VULNERABILIDADE. TEMPO DE GESTAÇÃO AVANÇADO. ORDEM DENEGADA.</textarea>
+                                </td>
+                                <td>Key Words</td>
+                                <td><i id="icones" class="fa fa-download" onclick="download('area1')"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Jurisprudência 2</td>
+                                <td><textarea name="" id="area2" cols="90" rows="3" style="resize: none"
+                                        disabled>APELAÇÃO. ESTUPRO. ABORTO PROVOCADO POR TERCEIRO SEM O CONSENTIMENTO DA GESTANTE. IMPRONÚNCIA. IRRESIGNAÇÃO MINISTERIAL. AUSÊNCIA DE PROVA DA MATERIALIDADE DELITIVA. SENTENÇA MANTIDA</textarea></td>
+                                <td>Key Words</td>
+                                <td><i id="icones" class="fa fa-download" onclick="download('area2')"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Jurisprudência 3</td>
+                                <td><textarea name="" id="area3" cols="90" rows="3" style="resize: none"
+                                        disabled>PENAL. PROCESSO PENAL. AGRAVO REGIMENTAL NOS EMBARGOS DE DECLARAÇÃO NO AGRAVO EM RECURSO ESPECIAL. HOMICÍDIO QUALIFICADO. ART. 121 , § 2º , I , III E IV , DO CÓDIGO PENAL ? CP . ABORTO PROVOCADO POR TERCEIRO. ART. 125 DO CP . 1) VIOLAÇÃO AO ART. 617 DO CÓDIGO DE PROCESSO PENAL ? CPP . TRIBUNAL DE JUSTIÇA QUE LIMITA O MONTANTE TOTAL DE PENA PELO COMETIMENTO DO HOMICÍDIO E DO ABORTO AO MONTANTE ESTIPULADO NUM PRIMEIRO JULGAMENTO DO TRIBUNAL DO JÚRI QUE CONDENOU O RECORRENTE APENAS PELO DELITO DE HOMICÍDIO. DEFESA QUE PRETENDE AFASTAR A CONDENAÇÃO PELO ABORTO OU A PENA DECORRENTE DELE, EIS QUE O PRIMEIRO JULGAMENTO PELO TRIBUNAL DO JÚRI FOI ANULADO EM RECURSO EXCLUSIVO DA DEFESA. REFORMATIO IN PEJUS NÃO CONSTATADA. AGRAVO REGIMENTAL DESPROVIDO</textarea></td>
+                                <td>Key Words</td>
+                                <td><i id="icones" class="fa fa-download" onclick="download('area3')"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Jurisprudência 4</td>
+                                <td><textarea name="" id="area4" cols="90" rows="3" style="resize: none"
+                                        disabled></textarea></td>
+                                <td>Key Words</td>
+                                <td><i id="icones" class="fa fa-download" onclick="download('area4')"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Jurisprudência 5</td>
+                                <td><textarea name="" id="area5" cols="90" rows="3" style="resize: none"
+                                        disabled></textarea></td>
+                                <td>Key Words</td>
+                                <td><i id="icones" class="fa fa-download" onclick="download('area5')"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
